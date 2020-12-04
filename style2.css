@@ -1,0 +1,184 @@
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    color:hsl(300, 43%, 22%);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.container{
+    min-width: 375px;
+    background: url("images/bg-pattern-bottom-mobile.svg") bottom right no-repeat , url("images/bg-pattern-top-mobile.svg") top left no-repeat;
+    margin: 0 auto;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+
+header{
+
+    margin-bottom:50px;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+p , blockquote{
+    line-height: 1.5rem;
+}
+
+
+/*--rate--*/
+.container-star{
+    margin-bottom: 50px;
+    
+}
+
+.container-star .star{
+    background:hsl(300, 24%, 96%);
+    margin-bottom: 1.5em;
+    font-weight: bold;
+
+}
+
+.container-star ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-star ul li{
+    margin-right:0.5em;
+}
+
+.star ul, p{
+    margin: 0;
+}
+
+.star ul {
+    margin-bottom: 0.5rem;
+}
+
+
+
+/*--review--*/
+.review-list{
+    background-color:hsl(300, 43%, 22%) ;
+    color:hsl(300, 24%, 96%);
+    border-radius: 10px;
+    text-align: left;
+    padding: 24px 0;
+    margin-bottom: 2em;
+}
+
+blockquote{
+    font-weight: 500;
+}
+
+figure img, figcaption{
+    display: inline-block;
+    vertical-align: middle;
+}
+figure img{
+    border-radius: 50%;
+    margin-right: 1.5em;
+    width: 3.5rem;
+}
+
+figcaption{
+    font-weight: bold;
+}
+
+span{
+    color:hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+
+@media screen and (min-width: 1200px){
+
+    body{
+        text-align: left;
+    }
+
+    .container{
+        background: url("images/bg-pattern-bottom-desktop.svg") bottom right no-repeat , url("images/bg-pattern-top-desktop.svg") top left no-repeat;
+        max-width: 1440px;
+        padding: 10% 10%;
+        background-color: red;
+
+    }
+
+    section {
+        display:flex;
+        justify-content: space-between;
+
+    }
+
+    header {
+        width: 35%;
+        text-align: left;
+        background-color: rgb(132, 0, 255);
+    }
+
+    .container-star {
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        background-color: blue;
+
+    }
+
+    .container-star .star {
+        width: 80%;
+        display:flex;
+        flex-flow: column wrap;
+        justify-self: center;
+        position: relative;
+        box-sizing: border-box
+
+    }
+
+    .star2 {
+        left: 10%;
+    }
+
+    .container-star .star3 {
+        left: 20%;
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1324px){
+
+    .container-star .star {
+        flex-flow: row wrap;
+        justify-self: start;
+        align-items: center;
+        
+    }
+    
+    .star ul{
+        margin: 0 2em;
+    }
+
+
+    
+
+    
+}
+
+
